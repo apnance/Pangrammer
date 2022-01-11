@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930C2C1C278E2991009B111C /* Solver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930C2C19278E2991009B111C /* Solver.swift */; };
 		93B53EF1278A977B00359D68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B53EF0278A977B00359D68 /* AppDelegate.swift */; };
 		93B53EF3278A977B00359D68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B53EF2278A977B00359D68 /* SceneDelegate.swift */; };
 		93B53EF5278A977B00359D68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B53EF4278A977B00359D68 /* ViewController.swift */; };
@@ -16,7 +17,6 @@
 		93B53F08278A977E00359D68 /* DePangrammerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B53F07278A977E00359D68 /* DePangrammerTests.swift */; };
 		93B53F12278A977E00359D68 /* DePangrammerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B53F11278A977E00359D68 /* DePangrammerUITests.swift */; };
 		93B53F14278A977E00359D68 /* DePangrammerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B53F13278A977E00359D68 /* DePangrammerUITestsLaunchTests.swift */; };
-		93B53F45278A98CA00359D68 /* Pangram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B53F44278A98CA00359D68 /* Pangram.swift */; };
 		93B53F52278BA96300359D68 /* APNUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B53F4E278BA95500359D68 /* APNUtils.framework */; };
 		93B53F53278BA96300359D68 /* APNUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93B53F4E278BA95500359D68 /* APNUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		93BD7F6E278CBDB400D45767 /* words.edited.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93BD7F6B278CBDB400D45767 /* words.edited.txt */; };
@@ -69,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		930C2C19278E2991009B111C /* Solver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solver.swift; sourceTree = "<group>"; };
 		93B53EED278A977B00359D68 /* Pangrammer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pangrammer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B53EF0278A977B00359D68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93B53EF2278A977B00359D68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,7 +83,6 @@
 		93B53F0D278A977E00359D68 /* PangrammerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PangrammerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B53F11278A977E00359D68 /* DePangrammerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DePangrammerUITests.swift; sourceTree = "<group>"; };
 		93B53F13278A977E00359D68 /* DePangrammerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DePangrammerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		93B53F44278A98CA00359D68 /* Pangram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pangram.swift; sourceTree = "<group>"; };
 		93B53F48278BA95500359D68 /* APNUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = APNUtils.xcodeproj; path = ../../Frameworks/APNUtils/APNUtils.xcodeproj; sourceTree = "<group>"; };
 		93BD7F6B278CBDB400D45767 /* words.edited.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.edited.txt; sourceTree = "<group>"; };
 		93BD7F6F278CC31600D45767 /* words.edited.possible.solutions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.edited.possible.solutions.txt; sourceTree = "<group>"; };
@@ -188,7 +188,7 @@
 		93B53F22278A979A00359D68 /* M */ = {
 			isa = PBXGroup;
 			children = (
-				93B53F44278A98CA00359D68 /* Pangram.swift */,
+				930C2C19278E2991009B111C /* Solver.swift */,
 			);
 			name = M;
 			sourceTree = "<group>";
@@ -377,8 +377,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				930C2C1C278E2991009B111C /* Solver.swift in Sources */,
 				93B53EF5278A977B00359D68 /* ViewController.swift in Sources */,
-				93B53F45278A98CA00359D68 /* Pangram.swift in Sources */,
 				93B53EF1278A977B00359D68 /* AppDelegate.swift in Sources */,
 				93B53EF3278A977B00359D68 /* SceneDelegate.swift in Sources */,
 			);

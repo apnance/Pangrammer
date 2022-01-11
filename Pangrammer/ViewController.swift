@@ -60,7 +60,7 @@ extension ViewController: UITextFieldDelegate {
             
             let word = input.text!
                     
-            let solution = Pangram.shared.analyze(word)
+            let solution = Solver.shared.analyze(word)
             
             var text = ""
             for word in solution {

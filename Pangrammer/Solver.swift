@@ -7,9 +7,9 @@
 
 import APNUtils
 
-class Pangram
+class Solver
 {
-    static var shared = Pangram()
+    static var shared = Solver()
     
     // MARK: - Properties
     private var getCounter = 0 { didSet { checkGetCount() } }
