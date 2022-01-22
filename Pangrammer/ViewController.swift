@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         view.addGestureRecognizer(hideKeyboard)
         
         input.delegate = self
+        output.layer.cornerRadius = 3
         
         super.viewDidLoad()
         
