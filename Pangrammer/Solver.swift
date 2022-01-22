@@ -131,13 +131,14 @@ class Solver
     
     /// Checks `word` for all contained words, returns `[String]` containing matching anagram words,
     /// uppercasing pangrams.
-    func analyze(_ word: String) -> [String] {
+    func analyze(_ word: String) -> (anagrams: [String], pangrams:[String]) {
         
-        if word.count != 7 { return ["Invalid Input"] /*EXIT*/ }
+        if word.count != 7 { return (["Invalid Input"], []) /*EXIT*/ }
         let word = word.lowercased()
         
         let pangramKey  = generatePangramKey(word)
         var anagrams    = [String]()
+        var pangrams    = [String]()
         
         let centerIndex = word.index(word.startIndex, offsetBy: 3)
         let centerLetter = word[centerIndex]
@@ -148,9 +149,13 @@ class Solver
             
             if key.isSubset(of: pangramKey) && key.contains(centerLetter) {
                 
-                var matches = cToW[key] ?? []
+                let matches = cToW[key] ?? []
                 
-                if key.count == 7 { matches = matches.map(){ $0.uppercased() } }
+                if key.count == 7 {
+                    
+                    pangrams.append(contentsOf: matches)
+                    
+                }
                 
                 anagrams.append(contentsOf: matches)
                 
@@ -158,8 +163,10 @@ class Solver
             
         }
         
-        if anagrams.count == 0 { anagrams.append("No Pangrams Found") }
-        return anagrams.sorted(){ $1.count < $0.count }
+        anagrams = anagrams.sorted(){ $1.count < $0.count }
+        pangrams = pangrams.sorted(){ $1.count < $0.count }
+        
+        return (anagrams, pangrams)
         
     }
     
