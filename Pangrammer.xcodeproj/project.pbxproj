@@ -169,9 +169,7 @@
 		93B53F20278A978400359D68 /* C */ = {
 			isa = PBXGroup;
 			children = (
-				93B53EF0278A977B00359D68 /* AppDelegate.swift */,
-				93B53EF2278A977B00359D68 /* SceneDelegate.swift */,
-				93B53EF4278A977B00359D68 /* ViewController.swift */,
+				93CB4808279B735900A5CD8F /* iOS */,
 			);
 			name = C;
 			sourceTree = "<group>";
@@ -179,8 +177,7 @@
 		93B53F21278A979300359D68 /* V */ = {
 			isa = PBXGroup;
 			children = (
-				93B53EF6278A977B00359D68 /* Main.storyboard */,
-				93B53EFB278A977D00359D68 /* LaunchScreen.storyboard */,
+				93CB480B279B736000A5CD8F /* iOS */,
 			);
 			name = V;
 			sourceTree = "<group>";
@@ -196,10 +193,9 @@
 		93B53F23278A97AE00359D68 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				93CB480C279B737200A5CD8F /* iOS */,
 				93BD7F6F278CC31600D45767 /* words.edited.possible.solutions.txt */,
 				93BD7F6B278CBDB400D45767 /* words.edited.txt */,
-				93B53EF9278A977D00359D68 /* Assets.xcassets */,
-				93B53EFE278A977D00359D68 /* Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -218,6 +214,34 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93CB4808279B735900A5CD8F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				93B53EF0278A977B00359D68 /* AppDelegate.swift */,
+				93B53EF2278A977B00359D68 /* SceneDelegate.swift */,
+				93B53EF4278A977B00359D68 /* ViewController.swift */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		93CB480B279B736000A5CD8F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				93B53EF6278A977B00359D68 /* Main.storyboard */,
+				93B53EFB278A977D00359D68 /* LaunchScreen.storyboard */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		93CB480C279B737200A5CD8F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				93B53EF9278A977D00359D68 /* Assets.xcassets */,
+				93B53EFE278A977D00359D68 /* Info.plist */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
