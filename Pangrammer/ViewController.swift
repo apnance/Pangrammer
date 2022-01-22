@@ -47,16 +47,16 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UITextFieldDelegate {
-
-    enum TextStyle { case head1, head2, pangram, anagram}
     
-    func builAttributed(text: String,
-                        style: TextStyle,
-                        base: NSMutableAttributedString) {
+    private enum TextStyle { case head1, head2, pangram, pangramBest, anagram}
+    
+    private func builAttributed(text: String,
+                                style: TextStyle,
+                                base: NSMutableAttributedString) {
         
         var atts = [NSAttributedString.Key : Any]()
         atts[ NSAttributedString.Key.font] =  UIFont(name: "Futura-Medium", size: 11.0)!
-
+        
         switch style {
             
         case .head1:
@@ -66,12 +66,16 @@ extension ViewController: UITextFieldDelegate {
             
             
         case .head2:
-            atts[ NSAttributedString.Key.font] =  UIFont(name: "Futura-Medium", size: 12.0)!
+            atts[ NSAttributedString.Key.font] =  UIFont(name: "Futura-Bold", size: 12.0)!
             atts[NSAttributedString.Key.foregroundColor] = UIColor.white
             
         case .pangram:
-            
+            atts[ NSAttributedString.Key.font] =  UIFont(name: "Futura-Bold", size: 11.0)!
             atts[NSAttributedString.Key.foregroundColor] = UIColor.systemYellow
+            
+        case .pangramBest:
+            atts[ NSAttributedString.Key.font] =  UIFont(name: "Futura-Bold", size: 11.0)!
+            atts[NSAttributedString.Key.foregroundColor] = UIColor.systemRed
             
         case .anagram:
             
@@ -131,13 +135,16 @@ extension ViewController: UITextFieldDelegate {
                                         style: .head2,
                                         base: myString)
                 }
-                                
+                    
+                var style: TextStyle = .pangramBest
                 pan.forEach{
                     
                     self.builAttributed(text: "\($0) - \($0.count)\n",
-                                        style: .pangram,
+                                        style: style,
                                         base: myString)
-                                        
+                    
+                    style = .pangram
+                    
                 }
                 
                 self.builAttributed(text: "\nANAGRAMS(\(all.count)):\n",
