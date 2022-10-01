@@ -1,14 +1,14 @@
 //
-//  DePangrammerTests.swift
-//  DePangrammerTests
+//  PangrammerTests.swift
+//  PangrammerTests
 //
 //  Created by Aaron Nance on 1/8/22.
 //
 
 import XCTest
-@testable import DePangrammer
+@testable import Pangrammer
 
-class DePangrammerTests: XCTestCase {
+class PangrammerTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -1,13 +1,13 @@
 //
-//  DePangrammerUITestsLaunchTests.swift
-//  DePangrammerUITests
+//  PangrammerUITestsLaunchTests.swift
+//  PangrammerUITests
 //
 //  Created by Aaron Nance on 1/8/22.
 //
 
 import XCTest
 
-class DePangrammerUITestsLaunchTests: XCTestCase {
+class PangrammerUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
