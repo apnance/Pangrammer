@@ -14,11 +14,9 @@
 		93B53EF8278A977B00359D68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B53EF6278A977B00359D68 /* Main.storyboard */; };
 		93B53EFA278A977D00359D68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93B53EF9278A977D00359D68 /* Assets.xcassets */; };
 		93B53EFD278A977D00359D68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B53EFB278A977D00359D68 /* LaunchScreen.storyboard */; };
-		93B53F08278A977E00359D68 /* DePangrammerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B53F07278A977E00359D68 /* DePangrammerTests.swift */; };
-		93B53F12278A977E00359D68 /* DePangrammerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B53F11278A977E00359D68 /* DePangrammerUITests.swift */; };
-		93B53F14278A977E00359D68 /* DePangrammerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B53F13278A977E00359D68 /* DePangrammerUITestsLaunchTests.swift */; };
-		93B53F52278BA96300359D68 /* APNUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B53F4E278BA95500359D68 /* APNUtils.framework */; };
-		93B53F53278BA96300359D68 /* APNUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93B53F4E278BA95500359D68 /* APNUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		93B53F08278A977E00359D68 /* PangrammerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B53F07278A977E00359D68 /* PangrammerTests.swift */; };
+		93B53F12278A977E00359D68 /* PangrammerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B53F11278A977E00359D68 /* PangrammerUITests.swift */; };
+		93B53F14278A977E00359D68 /* PangrammerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B53F13278A977E00359D68 /* PangrammerUITestsLaunchTests.swift */; };
 		93BD7F6E278CBDB400D45767 /* words.edited.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93BD7F6B278CBDB400D45767 /* words.edited.txt */; };
 		93BD7F70278CC31600D45767 /* words.edited.possible.solutions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93BD7F6F278CC31600D45767 /* words.edited.possible.solutions.txt */; };
 /* End PBXBuildFile section */
@@ -79,11 +77,10 @@
 		93B53EFC278A977D00359D68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93B53EFE278A977D00359D68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93B53F03278A977E00359D68 /* PangrammerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PangrammerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		93B53F07278A977E00359D68 /* DePangrammerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DePangrammerTests.swift; sourceTree = "<group>"; };
+		93B53F07278A977E00359D68 /* PangrammerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PangrammerTests.swift; sourceTree = "<group>"; };
 		93B53F0D278A977E00359D68 /* PangrammerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PangrammerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		93B53F11278A977E00359D68 /* DePangrammerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DePangrammerUITests.swift; sourceTree = "<group>"; };
-		93B53F13278A977E00359D68 /* DePangrammerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DePangrammerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		93B53F48278BA95500359D68 /* APNUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = APNUtils.xcodeproj; path = ../../Frameworks/APNUtils/APNUtils.xcodeproj; sourceTree = "<group>"; };
+		93B53F11278A977E00359D68 /* PangrammerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PangrammerUITests.swift; sourceTree = "<group>"; };
+		93B53F13278A977E00359D68 /* PangrammerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PangrammerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		93BD7F6B278CBDB400D45767 /* words.edited.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.edited.txt; sourceTree = "<group>"; };
 		93BD7F6F278CC31600D45767 /* words.edited.possible.solutions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.edited.possible.solutions.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,7 +147,7 @@
 		93B53F06278A977E00359D68 /* DePangrammerTests */ = {
 			isa = PBXGroup;
 			children = (
-				93B53F07278A977E00359D68 /* DePangrammerTests.swift */,
+				93B53F07278A977E00359D68 /* PangrammerTests.swift */,
 			);
 			name = DePangrammerTests;
 			path = PangrammerTests;
@@ -159,8 +156,8 @@
 		93B53F10278A977E00359D68 /* DePangrammerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				93B53F11278A977E00359D68 /* DePangrammerUITests.swift */,
-				93B53F13278A977E00359D68 /* DePangrammerUITestsLaunchTests.swift */,
+				93B53F11278A977E00359D68 /* PangrammerUITests.swift */,
+				93B53F13278A977E00359D68 /* PangrammerUITestsLaunchTests.swift */,
 			);
 			name = DePangrammerUITests;
 			path = PangrammerUITests;
@@ -412,7 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93B53F08278A977E00359D68 /* DePangrammerTests.swift in Sources */,
+				93B53F08278A977E00359D68 /* PangrammerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,8 +417,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93B53F12278A977E00359D68 /* DePangrammerUITests.swift in Sources */,
-				93B53F14278A977E00359D68 /* DePangrammerUITestsLaunchTests.swift in Sources */,
+				93B53F12278A977E00359D68 /* PangrammerUITests.swift in Sources */,
+				93B53F14278A977E00359D68 /* PangrammerUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,7 +649,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aaron.nance.DePangrammerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaron.nance.PangrammerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -677,7 +674,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aaron.nance.DePangrammerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaron.nance.PangrammerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -700,7 +697,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aaron.nance.DePangrammerUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaron.nance.PangrammerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -723,7 +720,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aaron.nance.DePangrammerUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaron.nance.PangrammerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  DePangrammer
+//  Pangrammer
 //
 //  Created by Aaron Nance on 1/8/22.
 //
