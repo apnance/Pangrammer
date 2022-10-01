@@ -19,6 +19,7 @@
 		93B53F14278A977E00359D68 /* PangrammerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B53F13278A977E00359D68 /* PangrammerUITestsLaunchTests.swift */; };
 		93BD7F6E278CBDB400D45767 /* words.edited.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93BD7F6B278CBDB400D45767 /* words.edited.txt */; };
 		93BD7F70278CC31600D45767 /* words.edited.possible.solutions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93BD7F6F278CC31600D45767 /* words.edited.possible.solutions.txt */; };
+		93CEF96828E840B2009C1A07 /* APNUtil in Frameworks */ = {isa = PBXBuildFile; productRef = 93CEF96728E840B2009C1A07 /* APNUtil */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,20 +37,6 @@
 			remoteGlobalIDString = 93B53EEC278A977B00359D68;
 			remoteInfo = DePangrammer;
 		};
-		93B53F4D278BA95500359D68 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 93B53F48278BA95500359D68 /* APNUtils.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 933B80CD233AB3380060A850;
-			remoteInfo = APNUtils;
-		};
-		93B53F4F278BA95500359D68 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 93B53F48278BA95500359D68 /* APNUtils.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 933B80CE233AB3380060A850;
-			remoteInfo = APNUtilsTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,7 +46,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				93B53F53278BA96300359D68 /* APNUtils.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +69,7 @@
 		93B53F13278A977E00359D68 /* PangrammerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PangrammerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		93BD7F6B278CBDB400D45767 /* words.edited.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.edited.txt; sourceTree = "<group>"; };
 		93BD7F6F278CC31600D45767 /* words.edited.possible.solutions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.edited.possible.solutions.txt; sourceTree = "<group>"; };
+		93CEF96628E840A8009C1A07 /* APNUtil */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = APNUtil; path = ../../Frameworks/APNUtil; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93B53F52278BA96300359D68 /* APNUtils.framework in Frameworks */,
+				93CEF96828E840B2009C1A07 /* APNUtil in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +101,7 @@
 		93B53EE4278A977B00359D68 = {
 			isa = PBXGroup;
 			children = (
-				93B53F48278BA95500359D68 /* APNUtils.xcodeproj */,
+				93CEF96528E840A8009C1A07 /* Packages */,
 				93B53EEF278A977B00359D68 /* Pangrammer */,
 				93B53F06278A977E00359D68 /* DePangrammerTests */,
 				93B53F10278A977E00359D68 /* DePangrammerUITests */,
@@ -197,15 +184,6 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		93B53F49278BA95500359D68 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				93B53F4E278BA95500359D68 /* APNUtils.framework */,
-				93B53F50278BA95500359D68 /* APNUtilsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		93B53F51278BA96300359D68 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +219,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		93CEF96528E840A8009C1A07 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				93CEF96628E840A8009C1A07 /* APNUtil */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -258,6 +244,9 @@
 			dependencies = (
 			);
 			name = Pangrammer;
+			packageProductDependencies = (
+				93CEF96728E840B2009C1A07 /* APNUtil */,
+			);
 			productName = DePangrammer;
 			productReference = 93B53EED278A977B00359D68 /* Pangrammer.app */;
 			productType = "com.apple.product-type.application";
@@ -332,12 +321,6 @@
 			mainGroup = 93B53EE4278A977B00359D68;
 			productRefGroup = 93B53EEE278A977B00359D68 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 93B53F49278BA95500359D68 /* Products */;
-					ProjectRef = 93B53F48278BA95500359D68 /* APNUtils.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				93B53EEC278A977B00359D68 /* Pangrammer */,
@@ -346,23 +329,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		93B53F4E278BA95500359D68 /* APNUtils.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = APNUtils.framework;
-			remoteRef = 93B53F4D278BA95500359D68 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		93B53F50278BA95500359D68 /* APNUtilsTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = APNUtilsTests.xctest;
-			remoteRef = 93B53F4F278BA95500359D68 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		93B53EEB278A977B00359D68 /* Resources */ = {
@@ -769,6 +735,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		93CEF96728E840B2009C1A07 /* APNUtil */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = APNUtil;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 93B53EE5278A977B00359D68 /* Project object */;
 }
