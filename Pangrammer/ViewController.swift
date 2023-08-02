@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     // MARK: - Properties
     var dictionary = [String]()
     var pangram = ""
@@ -114,8 +114,8 @@ extension ViewController: UITextFieldDelegate {
         let range = NSRange(location: 3, length: 1)
         
         baseMAS.addAttribute(NSAttributedString.Key.foregroundColor,
-                          value: UIColor.systemYellow,
-                          range: range)
+                             value: UIColor.systemYellow,
+                             range: range)
         
         self.input.text             = ""
         self.input.attributedText   = baseMAS
@@ -128,75 +128,75 @@ extension ViewController: UITextFieldDelegate {
         let input   = String(Array(input.text!).dedupe())
         let baseMAS = NSMutableAttributedString()
         
-            switch input.count {
-                    
-                case 7:
-                    
-                    self.input.text = input
-                    
-                    self.setTitle(text: input)
-                    
-                    self.input.resignFirstResponder()
-                    
-                    let (all, pan) = Solver.shared.analyze(input)
-                    
-                    self.builAttributed(text: "",
-                                        style: .pangram,
-                                        base: baseMAS)
-                    
-                    if pan.count > 0 {
-                        self.builAttributed(text: "PANGRAMS(\(pan.count)):\n",
-                                            style: .head2,
-                                            base: baseMAS)
-                    }
-                    
-                    var style: TextStyle = .pangramBest
-                    pan.forEach{
-                        
-                        self.builAttributed(text: "\($0) - \($0.count)\n",
-                                            style: style,
-                                            base: baseMAS)
-                        
-                        style = .pangram
-                        
-                    }
-                    
-                    self.builAttributed(text: "\nANAGRAMS(\(all.count)):\n",
+        switch input.count {
+                
+            case 7:
+                
+                self.input.text = input
+                
+                self.setTitle(text: input)
+                
+                self.input.resignFirstResponder()
+                
+                let (all, pan) = Solver.shared.analyze(input)
+                
+                self.builAttributed(text: "",
+                                    style: .pangram,
+                                    base: baseMAS)
+                
+                if pan.count > 0 {
+                    self.builAttributed(text: "PANGRAMS(\(pan.count)):\n",
                                         style: .head2,
                                         base: baseMAS)
+                }
+                
+                var style: TextStyle = .pangramBest
+                pan.forEach{
                     
-                    all.forEach{
-                        
-                        self.builAttributed(text: "\($0) - \($0.count)\n",
-                                            style: .anagram,
-                                            base: baseMAS)
-                        
-                    }
-                    
-                    success = true
-                    
-                default:
-                    
-                    let text = input.count > 7 ? "many" : "few"
-                    
-                    self.builAttributed(text: "Invalid Input:\n",
-                                        style: .errorHead,
+                    self.builAttributed(text: "\($0) - \($0.count)\n",
+                                        style: style,
                                         base: baseMAS)
                     
-                    self.builAttributed(text: "Too \(text) characters(\(input.count)) - ",
-                                        style: .error1,
+                    style = .pangram
+                    
+                }
+                
+                self.builAttributed(text: "\nANAGRAMS(\(all.count)):\n",
+                                    style: .head2,
+                                    base: baseMAS)
+                
+                all.forEach{
+                    
+                    self.builAttributed(text: "\($0) - \($0.count)\n",
+                                        style: .anagram,
                                         base: baseMAS)
                     
-                    self.builAttributed(text: "Pangram input must be 7 unique characters.",
-                                        style: .error2,
-                                        base: baseMAS)
-                    
-                    success = false
-                    
-            }
+                }
+                
+                success = true
+                
+            default:
+                
+                let text = input.count > 7 ? "many" : "few"
+                
+                self.builAttributed(text: "Invalid Input:\n",
+                                    style: .errorHead,
+                                    base: baseMAS)
+                
+                self.builAttributed(text: "Too \(text) characters(\(input.count)) - ",
+                                    style: .error1,
+                                    base: baseMAS)
+                
+                self.builAttributed(text: "Pangram input must be 7 unique characters.",
+                                    style: .error2,
+                                    base: baseMAS)
+                
+                success = false
+                
+        }
         
         DispatchQueue.main.async { self.output.attributedText = baseMAS }
-            
+        
         return success /*EXIT*/
         
     }
