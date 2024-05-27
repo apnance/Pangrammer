@@ -35741,6 +35741,7 @@ clichéd
 clichéed
 clichés
 click
+clickable
 clicked
 clicker
 clickers
@@ -112662,9 +112663,13 @@ mobil
 mobile
 mobiles
 mobilia
-mobilise
-mobilises
 mobility
+mobilize
+mobilizes
+mobilized
+mobilizer
+mobilizers
+mobilizing
 moble
 mobled
 mobles
