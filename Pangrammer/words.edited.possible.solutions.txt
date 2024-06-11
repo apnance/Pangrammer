@@ -100753,8 +100753,8 @@ legit
 legitim
 legitimate
 legitime
-legitimise
-legitimises
+legitimize
+legitimizes
 legitimism
 legitimisms
 legitimist
