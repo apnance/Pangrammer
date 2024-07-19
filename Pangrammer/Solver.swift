@@ -51,7 +51,7 @@ class Solver
         getCounter += 1
         
         // NOTE: this file contains only words matching 7 letter pangrams.
-        let file = (name:"words.edited.possible.solutions", type: "txt")
+        let file = (name:"PossibleAnswers.Pangrammer", type: "txt")
         
         if let path = Bundle.main.path(forResource: file.name, ofType: file.type) {
             

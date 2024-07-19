@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		930C2C1C278E2991009B111C /* Solver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930C2C19278E2991009B111C /* Solver.swift */; };
+		938C1FAB2C4B2064006A1E74 /* PossibleAnswers.Pangrammer.txt in Resources */ = {isa = PBXBuildFile; fileRef = 938C1FAA2C4B2063006A1E74 /* PossibleAnswers.Pangrammer.txt */; };
+		938C1FAE2C4B21E0006A1E74 /* APNUtil in Frameworks */ = {isa = PBXBuildFile; productRef = 938C1FAD2C4B21E0006A1E74 /* APNUtil */; };
 		93B53EF1278A977B00359D68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B53EF0278A977B00359D68 /* AppDelegate.swift */; };
 		93B53EF3278A977B00359D68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B53EF2278A977B00359D68 /* SceneDelegate.swift */; };
 		93B53EF5278A977B00359D68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B53EF4278A977B00359D68 /* ViewController.swift */; };
@@ -17,7 +19,7 @@
 		93B53F08278A977E00359D68 /* PangrammerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B53F07278A977E00359D68 /* PangrammerTests.swift */; };
 		93B53F12278A977E00359D68 /* PangrammerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B53F11278A977E00359D68 /* PangrammerUITests.swift */; };
 		93B53F14278A977E00359D68 /* PangrammerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B53F13278A977E00359D68 /* PangrammerUITestsLaunchTests.swift */; };
-		93BD7F6E278CBDB400D45767 /* words.edited.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93BD7F6B278CBDB400D45767 /* words.edited.txt */; };
+		93BD7F6E278CBDB400D45767 /* words.edited.DEPRECATED.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93BD7F6B278CBDB400D45767 /* words.edited.DEPRECATED.txt */; };
 		93BD7F70278CC31600D45767 /* words.edited.possible.solutions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93BD7F6F278CC31600D45767 /* words.edited.possible.solutions.txt */; };
 		93CEF96828E840B2009C1A07 /* APNUtil in Frameworks */ = {isa = PBXBuildFile; productRef = 93CEF96728E840B2009C1A07 /* APNUtil */; };
 /* End PBXBuildFile section */
@@ -54,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		930C2C19278E2991009B111C /* Solver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solver.swift; sourceTree = "<group>"; };
+		938C1FAA2C4B2063006A1E74 /* PossibleAnswers.Pangrammer.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PossibleAnswers.Pangrammer.txt; sourceTree = "<group>"; };
 		93B53EED278A977B00359D68 /* Pangrammer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pangrammer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B53EF0278A977B00359D68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93B53EF2278A977B00359D68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,9 +70,8 @@
 		93B53F0D278A977E00359D68 /* PangrammerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PangrammerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B53F11278A977E00359D68 /* PangrammerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PangrammerUITests.swift; sourceTree = "<group>"; };
 		93B53F13278A977E00359D68 /* PangrammerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PangrammerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		93BD7F6B278CBDB400D45767 /* words.edited.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.edited.txt; sourceTree = "<group>"; };
+		93BD7F6B278CBDB400D45767 /* words.edited.DEPRECATED.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.edited.DEPRECATED.txt; sourceTree = "<group>"; };
 		93BD7F6F278CC31600D45767 /* words.edited.possible.solutions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.edited.possible.solutions.txt; sourceTree = "<group>"; };
-		93CEF96628E840A8009C1A07 /* APNUtil */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = APNUtil; path = ../../Frameworks/APNUtil; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				938C1FAE2C4B21E0006A1E74 /* APNUtil in Frameworks */,
 				93CEF96828E840B2009C1A07 /* APNUtil in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,7 +104,6 @@
 		93B53EE4278A977B00359D68 = {
 			isa = PBXGroup;
 			children = (
-				93CEF96528E840A8009C1A07 /* Packages */,
 				93B53EEF278A977B00359D68 /* Pangrammer */,
 				93B53F06278A977E00359D68 /* DePangrammerTests */,
 				93B53F10278A977E00359D68 /* DePangrammerUITests */,
@@ -179,7 +181,8 @@
 			children = (
 				93CB480C279B737200A5CD8F /* iOS */,
 				93BD7F6F278CC31600D45767 /* words.edited.possible.solutions.txt */,
-				93BD7F6B278CBDB400D45767 /* words.edited.txt */,
+				93BD7F6B278CBDB400D45767 /* words.edited.DEPRECATED.txt */,
+				938C1FAA2C4B2063006A1E74 /* PossibleAnswers.Pangrammer.txt */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -219,14 +222,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		93CEF96528E840A8009C1A07 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				93CEF96628E840A8009C1A07 /* APNUtil */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,6 +241,7 @@
 			name = Pangrammer;
 			packageProductDependencies = (
 				93CEF96728E840B2009C1A07 /* APNUtil */,
+				938C1FAD2C4B21E0006A1E74 /* APNUtil */,
 			);
 			productName = DePangrammer;
 			productReference = 93B53EED278A977B00359D68 /* Pangrammer.app */;
@@ -319,6 +315,9 @@
 				Base,
 			);
 			mainGroup = 93B53EE4278A977B00359D68;
+			packageReferences = (
+				938C1FAC2C4B21E0006A1E74 /* XCRemoteSwiftPackageReference "APNUtil" */,
+			);
 			productRefGroup = 93B53EEE278A977B00359D68 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -335,8 +334,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93BD7F6E278CBDB400D45767 /* words.edited.txt in Resources */,
+				93BD7F6E278CBDB400D45767 /* words.edited.DEPRECATED.txt in Resources */,
 				93B53EFD278A977D00359D68 /* LaunchScreen.storyboard in Resources */,
+				938C1FAB2C4B2064006A1E74 /* PossibleAnswers.Pangrammer.txt in Resources */,
 				93BD7F70278CC31600D45767 /* words.edited.possible.solutions.txt in Resources */,
 				93B53EFA278A977D00359D68 /* Assets.xcassets in Resources */,
 				93B53EF8278A977B00359D68 /* Main.storyboard in Resources */,
@@ -736,7 +736,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		938C1FAC2C4B21E0006A1E74 /* XCRemoteSwiftPackageReference "APNUtil" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apnance/APNUtil";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		938C1FAD2C4B21E0006A1E74 /* APNUtil */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 938C1FAC2C4B21E0006A1E74 /* XCRemoteSwiftPackageReference "APNUtil" */;
+			productName = APNUtil;
+		};
 		93CEF96728E840B2009C1A07 /* APNUtil */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = APNUtil;
